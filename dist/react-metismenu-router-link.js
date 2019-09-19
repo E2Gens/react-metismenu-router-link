@@ -98,8 +98,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  _createClass(RouterLink, [{
-	    key: 'componentWillMount',
-	    value: function componentWillMount() {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
 	      this.to = this.props.to;
 	      if (this.to[0] !== '/') this.to = '/' + this.to;
 
