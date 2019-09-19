@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 
 class RouterLink extends React.Component {
-  componentWillMount() {
+  componentDidMount() {
     this.to = this.props.to;
     if (this.to[0] !== '/') this.to = `/${this.to}`;
 
