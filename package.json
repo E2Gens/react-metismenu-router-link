@@ -30,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alpertuna/react-metismenu-router-link.git"
+    "url": "git+https://github.com/E2Gens/react-metismenu-router-link.git"
   },
   "bugs": {
-    "url": "https://github.com/alpertuna/react-metismenu-router-link/issues"
+    "url": "https://github.com/E2Gens/react-metismenu-router-link/issues"
   },
-  "homepage": "https://github.com/alpertuna/react-metismenu-router-link#readme",
+  "homepage": "https://github.com/E2Gens/react-metismenu-router-link#readme",
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-loader": "^6.2.5",
