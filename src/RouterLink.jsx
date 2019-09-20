@@ -14,8 +14,8 @@ class RouterLink extends React.Component {
     this.to = this.props.to;
     if (this.to[0] !== '/') this.to = `/${this.to}`;
 
-    this.context.router.history.listen(this.onLocationChange.bind(this));
-    this.onLocationChange(this.context.router.route);
+    this.props.router.history.listen(this.onLocationChange.bind(this));
+    this.onLocationChange(this.props.router.route);
   }
   onLocationChange(e) {
     if ((e.pathname || '/') === this.to) {
@@ -33,7 +33,7 @@ class RouterLink extends React.Component {
       externalLink,
       hasSubMenu,
       toggleSubMenu,
-      children,
+      children
     } = this.props;
 
     return (
@@ -81,10 +81,6 @@ RouterLink.propTypes = {
     PropTypes.element,
     PropTypes.array,
   ]).isRequired,
-};
-
-RouterLink.contextTypes = {
-  router: PropTypes.object.isRequired,
 };
 
 export default RouterLink;
