@@ -81,6 +81,7 @@ RouterLink.propTypes = {
     PropTypes.element,
     PropTypes.array,
   ]).isRequired,
+  router: PropTypes.object.isRequired
 };
 
 export default RouterLink;

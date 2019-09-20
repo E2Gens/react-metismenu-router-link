@@ -103,8 +103,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.to = this.props.to;
 	      if (this.to[0] !== '/') this.to = '/' + this.to;
 
-	      this.context.router.history.listen(this.onLocationChange.bind(this));
-	      this.onLocationChange(this.context.router.route);
+	      this.props.router.history.listen(this.onLocationChange.bind(this));
+	      this.onLocationChange(this.props.router.route);
 	    }
 	  }, {
 	    key: 'onLocationChange',
@@ -163,10 +163,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  hasSubMenu: _propTypes2.default.bool.isRequired,
 	  toggleSubMenu: _propTypes2.default.func,
 	  activateMe: _propTypes2.default.func.isRequired,
-	  children: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.array]).isRequired
-	};
-
-	RouterLink.contextTypes = {
+	  children: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.array]).isRequired,
 	  router: _propTypes2.default.object.isRequired
 	};
 
