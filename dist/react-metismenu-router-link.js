@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (this.to[0] !== '/') this.to = '/' + this.to;
 
 	      this.props.router.history.listen(this.onLocationChange.bind(this));
-	      this.onLocationChange(this.props.router.route);
+	      this.onLocationChange(this.props.router.location);
 	    }
 	  }, {
 	    key: 'onLocationChange',
